@@ -8,6 +8,8 @@ This app is called Expense Manager. Reading the name you can already guess what 
 See a graph what categories you spend most you money on.
 Last but not least you can also see your transaction in wallet page. By putting your total amount of money you have and your income, each month it increases with your income and all transaction are subtracted.
 
+![](https://i.imgur.com/lJ6ywx2.png)
+
 ## 3. Hosted
 My app is hosted with firebase.
 
