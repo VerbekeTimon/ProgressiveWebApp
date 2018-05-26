@@ -1,0 +1,33 @@
+{
+  "name": "progressive-web-apps",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "chartist": "^0.11.0",
+    "co": "latest",
+    "connect": "^3.6.6",
+    "content-security-policy": "^0.3.2",
+    "cookie-parser": "~1.4.3",
+    "csp-header": "^1.2.2",
+    "curl": "^0.1.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "helmet": "^3.12.1",
+    "http-errors": "~1.6.2",
+    "localforage": "^1.7.1",
+    "moment": "^2.22.0",
+    "mongodb": "^3.0.5",
+    "morgan": "~1.9.0",
+    "mysql": "^2.15.0",
+    "node-chartist": "^1.0.5",
+    "referrer": "^1.0.2",
+    "referrer-policy": "^1.1.0",
+    "supertest": "^3.1.0",
+    "x-frame-options": "^1.0.0",
+    "x-xss-protection": "^1.1.0"
+  }
+}

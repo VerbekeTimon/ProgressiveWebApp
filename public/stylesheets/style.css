@@ -1,0 +1,214 @@
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: lightslategray; /*#222*/
+    /*color: #C2C2C2;*/
+}
+
+header {
+    background-color: aquamarine; /*#ffbb0f*/
+    /*color: black;*/
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 2% 0 2% 0;
+}
+
+#goHome {
+    position: absolute;
+    border: 3px solid black;
+    border-radius: 8px;
+    margin: 4px;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    margin: 1% auto 1% auto;
+    background-color: #E1E2E1;
+    border: 2px solid black;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: aquamarine;
+    transition-duration: 0.5s;
+}
+
+button:nth-of-type(1) {
+    background: url("https://i.imgur.com/uP1zul4.png") no-repeat top left;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+button:nth-of-type(2) {
+    background: url("https://i.imgur.com/dReVc8p.png") no-repeat top left;
+    background-size: contain;
+    cursor: pointer;
+}
+
+button:nth-of-type(3) {
+    background: url("https://i.imgur.com/G7SvgnC.png") no-repeat top left;
+    background-size: contain;
+    cursor: pointer;
+}
+
+button:nth-of-type(4) {
+    background: url("https://i.imgur.com/Y8baThH.png") no-repeat top left;
+    background-size: contain;
+    cursor: pointer;
+}
+
+button:nth-of-type(5) {
+    background: url("https://i.imgur.com/e2zFzVF.png") no-repeat top left;
+    background-size: contain;
+    cursor: pointer;
+}
+
+button:nth-of-type(6) {
+    background: url("https://i.imgur.com/3VdcM2e.png") no-repeat top left;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.clear {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 5vh;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+form {
+    text-align: left;
+}
+
+.addExpensePage, .showWalletPage {
+    max-width: 500px;
+    padding: 20px 12px 10px 20px;
+}
+
+.addExpensePage label, .showWalletPage label {
+    display: block;
+    margin: 0 0 15px 0;
+}
+
+.addExpensePage label > span, .showWalletPage label > span {
+    width: 100px;
+    font-weight: bold;
+    float: left;
+    padding-top: 8px;
+    padding-right: 5px;
+}
+
+.addExpensePage span.required, .showWalletPage span.required {
+    color: aquamarine;
+}
+
+.addExpensePage input.input-field, .addExpensePage .select-field, .showWalletPage input.input-field, .showWalletPage .select-field {
+    width: 48%;
+}
+
+.addExpensePage input.input-field, .showWalletPage input.input-field,
+.addExpensePage .textarea-field, .showWalletPage.textarea-field,
+.addExpensePage .select-field, .showWalletPage .select-field {
+    box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    border-radius: 3px;
+    padding: 7px;
+    outline: none;
+}
+
+.addExpensePage .input-field:focus, .showWalletPage .input-field:focus,
+.addExpensePage .textarea-field:focus, .showWalletPage .textarea-field:focus,
+.addExpensePage .select-field:focus, .showWalletPage .select-field:focus {
+    border: 1px solid #307E6C;
+}
+
+.addExpensePage .textarea-field, .showWalletPage .textarea-field {
+    height: 100px;
+    width: 55%;
+}
+
+.addExpensePage input[type=submit], .showWalletPage input[type=submit],
+.addExpensePage input[type=button], .showWalletPage input[type=button] {
+    border: none;
+    padding: 8px 15px 8px 15px;
+    background: aquamarine;
+    color: #000;
+    border-radius: 3px;
+}
+
+.addExpensePage input[type=submit]:hover, .showWalletPage input[type=submit]:hover,
+.addExpensePage input[type=button]:hover, .showWalletPage input[type=button]:hover {
+    background: #307E6C;
+    color: #000;
+    transition-duration: 0.5s;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table tr {
+    border-bottom: 1px solid #ddd;
+    padding: .35em;
+}
+
+table th, table td {
+    padding: .625em;
+    text-align: center;
+}
+
+table th {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+span.expense:active, span.expense:focus {
+    padding: 8px 20px;
+    background-color: #dddddd;
+    border: 1px solid aquamarine;
+}
+
+.showAboutPage p {
+    font-size: 1.2rem;
+    margin: 5%;
+}
+
+.showChartPage p {
+    font-size: 1.5rem;
+    margin: 5%;
+}
+
+.ct-chart {
+    width: 100vw;
+    height: 80vh;
+    margin: auto;
+}
+
+.ct-label {
+    font-size: 0.8rem;
+}

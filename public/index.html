@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#7FFFD4">
+    <meta name="Description" content="Expense Manager Progressive Web App">
+    <title>Expense Manager</title>
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Expenses PWA">
+    <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
+    <!-- Add tile icon for Windows -->
+    <meta name="msapplication-TileImage" content="images/icons/android-chrome-192x192.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+    <link rel="shortcut icon" href="images/icons/favicon.ico">
+    <link rel='stylesheet preload' href='stylesheets/reset.css' as="style"/>
+    <link rel='stylesheet preload' href='stylesheets/style.css' as="style"/>
+    <link rel='stylesheet preload' href='stylesheets/chartist.min.css' as="style"/>
+    <link rel="manifest" href="manifest.json">
+
+    <!--<link href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" rel="stylesheet" type="text/css" />-->
+    <!--<link href='http://fonts.googleapis.com/css?family=Oxygen:300' rel='stylesheet' type='text/css'>-->
+</head>
+<body>
+<img alt="home" src="images/homeButton.png" id="goHome" width="30" height="30"/>
+<header id="myHeader">
+    <h1 id="h">Expense Manager</h1>
+</header>
+
+<main class="container">
+    <div class="mainMenu">
+        <button type="button">Add</button>
+        <button type="button">Wallet</button>
+        <button type="button">Chart</button>
+        <button type="button">History</button>
+        <button type="button">About</button>
+        <button type="button" disabled>Settings</button>
+    </div>
+
+    <div class="addExpensePage" hidden>
+        <form id="contactForm" onsubmit="addExpenses()">
+            <label for="product"><span>Product: <span class="required">*</span></span>
+                <input type="text" class="input-field" id="product" placeholder="Name of product!" required/>
+            </label>
+            <label for="amount"><span>Amount: <span class="required">*</span></span>
+                <input type="text" class="input-field" id="amount" placeholder="What was the price?" required/>
+            </label>
+            <label for="date"><span>Date: <span class="required">*</span></span>
+                <input type="date" class="input-field" id="date" required/>
+            </label>
+            <label for="category"><span>Category: </span>
+                <select id="category" class="select-field" required>
+                    <option value="electronics">Electronics</option>
+                    <option value="clothes">Clothes</option>
+                    <option value="food">Food</option>
+                    <option value="games">Games</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            <label for="description"><span>Description: </span>
+                <textarea id="description" class="textarea-field" placeholder="Write a description about your product!"></textarea>
+            </label>
+            <label><span>&nbsp;</span>
+                <input type="submit" value="Save"/>
+            </label>
+        </form>
+    </div>
+
+    <div class="showWalletPage" hidden>
+        <form id="walletForm" onsubmit="addWallet()">
+            <label for="balance"><span>Total Balance: <span class="required">*</span></span>
+                <input type="text" class="input-field" id="balance" placeholder="Place your total balance!" required/>
+            </label>
+            <label for="income"><span>Income: <span class="required">*</span></span>
+                <input type="text" class="input-field" id="income" placeholder="Place your monthly income!" required/>
+            </label>
+            <label><span>&nbsp;</span>
+                <input type="submit" value="Submit"/>
+            </label>
+        </form>
+        <table class="walletTable">
+            <thead>
+            <tr>
+                <th>Total Balance</th>
+                <th>Income</th>
+            </tr>
+            </thead>
+            <tbody id="wallet">
+
+            </tbody>
+        </table>
+        <div id="results"></div>
+    </div>
+
+    <div class="showChartPage" hidden>
+        <p>Total expenses per category</p>
+        <div class="ct-chart"></div>
+        <div id="textChart"></div>
+    </div>
+
+    <div class="showHistoryPage" hidden>
+        <table class="expensetable">
+            <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Date</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody id="productValue">
+
+            </tbody>
+        </table>
+        <input type="button" class="clear" onclick="clearHistory()" value="Clear History">
+    </div>
+
+    <div class="showAboutPage" hidden>
+        <p>This is a school project for the course Progressive Web Apps.</p>
+        <p>Manage your expenses directly on your smartphone. Easily keep track of your expenses.</p>
+        <p>This app allows you to record your expenses easily. Optionally you can assign a category
+            to your expense in order to get detailed statistics and helpful insights.</p>
+        <p>The wallet page is not fully operational.</p>
+        <p>The chart page is not fully operational.</p>
+        <p>The settings page is not yet implemented. (No settings available)</p>
+    </div>
+
+</main>
+</body>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="javascripts/script.js"></script>
+<script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+<script type="text/javascript" src="javascripts/charts.js"></script>
+</html>
