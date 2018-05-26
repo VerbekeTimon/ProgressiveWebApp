@@ -9,7 +9,6 @@
     "chartist": "^0.11.0",
     "co": "latest",
     "connect": "^3.6.6",
-    "content-security-policy": "^0.3.2",
     "cookie-parser": "~1.4.3",
     "csp-header": "^1.2.2",
     "curl": "^0.1.4",
@@ -24,10 +23,6 @@
     "morgan": "~1.9.0",
     "mysql": "^2.15.0",
     "node-chartist": "^1.0.5",
-    "referrer": "^1.0.2",
-    "referrer-policy": "^1.1.0",
-    "supertest": "^3.1.0",
-    "x-frame-options": "^1.0.0",
-    "x-xss-protection": "^1.1.0"
+    "supertest": "^3.1.0"
   }
 }

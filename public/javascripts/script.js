@@ -93,7 +93,6 @@ function addExpenses() {
 
     // On Error
     request.onerror = function (e) {
-        alert("Sorry, The form was not submitted");
         console.log("Error:" + e.target.error.name);
     };
 }
@@ -132,7 +131,7 @@ function clearHistory() {
 
     objectStoreRequest.onsuccess = function() {
         // report the success of our request
-        console.log("Successfully Cleared History");
+        alertify.success("Successfully Cleared History");
         showExpenses();
     };
 }
