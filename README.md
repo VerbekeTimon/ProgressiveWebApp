@@ -1,6 +1,7 @@
 # Progressive Web Apps
 
 ## 1. Git repo
+url: [https://github.com/VerbekeTimon/ProgressiveWebApp](https://github.com/VerbekeTimon/ProgressiveWebApp)
 
 ## 2. App
 This app is called Expense Manager. Reading the name you can already guess what the app is supposed to do. You can add expenses, you can see all your expenses you have done, edit an expense in history (misspelled / wrong date / wrong price) page, delete a certain expence or clear all history.
@@ -9,6 +10,7 @@ Last but not least you can also see your transaction in wallet page. By putting 
 
 ## 3. Hosted
 My app is hosted with firebase.
+
 url: [https://expensemanager-9fb05.firebaseapp.com/](https://expensemanager-9fb05.firebaseapp.com/)
 
 ## 4. Security headers
