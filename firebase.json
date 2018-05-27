@@ -5,6 +5,35 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "source": "*",
+        "headers": [
+          {
+            "key": "X-Frame-Option",
+            "value": "same-origin"
+          }
+        ]
+      },
+      {
+        "source": "*",
+        "headers": [
+          {
+            "key": "X-XSS-Protection",
+            "value": "1; mode=block"
+          }
+        ]
+      },
+      {
+        "source": "404.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=300"
+          }
+        ]
+      }
     ]
   }
 }

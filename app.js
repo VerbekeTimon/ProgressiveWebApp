@@ -12,7 +12,7 @@ let app = express();
 // app.use(helmet());
 app.use(helmet.xssFilter());
 app.use(helmet.referrerPolicy({ policy: 'same-origin' }));
-app.use(helmet.frameguard({ action: 'sameorigin' }));
+app.use(helmet.frameguard({ action: 'same-origin' }));
 app.use(helmet.contentSecurityPolicy({
     directives: {
         defaultSrc: ["'self'"],

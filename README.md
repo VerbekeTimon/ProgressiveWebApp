@@ -45,4 +45,6 @@ app.use(helmet.hsts({
 }));
 ```
 
+The problem with these headers is that firebase doesn't support all headers. HSTS, CSP and referrer-policy are only working with localhost:3000.
+
 ## 5. Webpack
