@@ -4,16 +4,26 @@
 url: [https://github.com/VerbekeTimon/ProgressiveWebApp](https://github.com/VerbekeTimon/ProgressiveWebApp)
 
 ## 2. App
+### 2.1 Concept
 This app is called Expense Manager. Reading the name you can already guess what the app is supposed to do. You can add expenses, you can see all your expenses you have done, edit an expense in history (misspelled / wrong date / wrong price) page, delete a certain expence or clear all history.
 See a graph what categories you spend most you money on.
 Last but not least you can also see your transaction in wallet page. By putting your total amount of money you have and your income, each month it increases with your income and all transaction are subtracted.
 
 ![](https://i.imgur.com/lJ6ywx2.png)
 
+### 2.2 Used technologies
+* node.js
+* indexedDB (storage)
+* helmet (headers)
+* chartist (graph)
+* alertify (alert messages)
+
 ## 3. Hosted
 My app is hosted with firebase.
 
 url: [https://expensemanager-9fb05.firebaseapp.com/](https://expensemanager-9fb05.firebaseapp.com/)
+
+You can also open the project folder in PhpStorm/WebStorm or other software and run in the terminal the ccommand **node .\bin\www** or **npm start**. And then surf to url: [http://localhost:3000/](http://localhost:3000/).
 
 ## 4. Security headers
 For implemening security headers I used Helmet. As you can see in the code below, I implemented the following headers:
